@@ -1,0 +1,654 @@
+.image-8-icon {
+  position: absolute;
+  top: 0;
+  left: 331px;
+  width: 1109px;
+  height: 901px;
+  object-fit: cover;
+}
+.website-child {
+  position: absolute;
+  top: 183px;
+  left: 2px;
+  width: 190.91px;
+  height: 189px;
+}
+.revoship,
+.tentang-kami {
+  position: absolute;
+  color: var(--color-firebrick-200);
+}
+.revoship {
+  top: 54px;
+  left: 100px;
+  font-size: 64px;
+  font-family: var(--font-bebas-neue);
+}
+.tentang-kami {
+  top: 77px;
+  left: 368px;
+  font-size: var(--font-size-lg);
+  font-weight: 800;
+}
+.website-item {
+  position: absolute;
+  top: 111px;
+  left: 367px;
+  border-top: 2px solid var(--color-firebrick-200);
+  box-sizing: border-box;
+  width: 48px;
+  height: 2px;
+}
+.cek-ongkir,
+.kontak-kami,
+.layanan,
+.lokasi,
+.testimoni {
+  position: absolute;
+  top: 77px;
+  left: 517px;
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+  color: var(--color-gray-100);
+}
+.cek-ongkir,
+.kontak-kami,
+.lokasi,
+.testimoni {
+  left: 619px;
+}
+.cek-ongkir,
+.kontak-kami,
+.testimoni {
+  left: 705px;
+}
+.kontak-kami,
+.testimoni {
+  left: 833px;
+}
+.kontak-kami {
+  left: 947px;
+}
+.group-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--br-5xs);
+  background-color: #ce4a4a;
+  width: 92px;
+  height: 32.05px;
+}
+.registrasi {
+  position: absolute;
+  top: 7px;
+  left: 12px;
+  font-weight: 600;
+}
+.rectangle-parent {
+  position: absolute;
+  top: 70px;
+  left: 1248px;
+  width: 92px;
+  height: 32.05px;
+  text-align: center;
+  font-size: var(--font-size-sm);
+}
+.group-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--br-5xs);
+  background-color: var(--color-firebrick-200);
+  width: 145px;
+  height: 40px;
+}
+.cek-disini {
+  position: absolute;
+  top: 9px;
+  left: calc(50% - 25.5px);
+  font-weight: 600;
+  display: inline-block;
+  width: 67px;
+  height: 22px;
+}
+.rectangle-group {
+  position: absolute;
+  top: 635px;
+  left: 1197px;
+  width: 145px;
+  height: 40px;
+  text-align: center;
+  font-size: var(--font-size-sm);
+}
+.group-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--br-5xs);
+  background-color: var(--color-white);
+  border: 1px solid var(--color-firebrick-200);
+  box-sizing: border-box;
+  width: 95px;
+  height: 32.05px;
+}
+.masuk {
+  position: absolute;
+  top: 7px;
+  left: calc(50% - 21.5px);
+  font-weight: 600;
+}
+.rectangle-container {
+  position: absolute;
+  top: 70px;
+  left: 1123px;
+  width: 95px;
+  height: 32.05px;
+  text-align: center;
+  font-size: var(--font-size-sm);
+  color: var(--color-gray-100);
+}
+.image-1-icon {
+  position: absolute;
+  top: 209px;
+  left: 100px;
+  border-radius: var(--br-81xl) 0 var(--br-81xl) 0;
+  width: 505px;
+  height: 631px;
+  object-fit: cover;
+}
+.terpercaya {
+  color: var(--color-firebrick-200);
+}
+.kami-memandang-ke,
+.solusi-pengiriman-terpercaya-container {
+  position: absolute;
+  line-height: 130%;
+  font-weight: 600;
+  color: var(--color-gray-100);
+  display: inline-block;
+  width: 607px;
+}
+.solusi-pengiriman-terpercaya-container {
+  top: 209px;
+  left: 730px;
+  font-size: 56px;
+}
+.kami-memandang-ke {
+  top: 465px;
+  left: 732px;
+  font-size: var(--font-size-5xl);
+}
+.image-2-icon,
+.image-3-icon,
+.image-7-icon {
+  position: absolute;
+  top: 735px;
+  left: 732px;
+  width: 95px;
+  height: 95px;
+  object-fit: cover;
+}
+.image-3-icon,
+.image-7-icon {
+  left: 857px;
+  width: 109.62px;
+}
+.image-7-icon {
+  top: 872px;
+  left: 1050px;
+  width: 166px;
+  height: 43px;
+}
+.cek-resi,
+.website-inner {
+  position: absolute;
+  left: 735px;
+}
+.cek-resi {
+  top: 594px;
+  line-height: 130%;
+  font-weight: 600;
+  color: var(--color-firebrick-200);
+}
+.website-inner {
+  top: 635px;
+  border-radius: var(--br-5xs);
+  background-color: var(--color-white);
+  border: 1px solid var(--color-firebrick-200);
+  box-sizing: border-box;
+  width: 451px;
+  height: 40px;
+}
+.image-4-icon,
+.image-5-icon,
+.image-6-icon {
+  position: absolute;
+  top: 766px;
+  left: 997px;
+  width: 149px;
+  height: 48px;
+  object-fit: cover;
+}
+.image-5-icon,
+.image-6-icon {
+  top: 872px;
+  left: 730px;
+  width: 143px;
+  height: 47px;
+}
+.image-6-icon {
+  left: 903px;
+  width: 117px;
+  height: 87px;
+}
+.masukkan-resi-anda {
+  position: absolute;
+  top: 647px;
+  left: 747px;
+  font-size: var(--font-size-xs);
+  font-weight: 500;
+  color: rgba(30, 41, 59, 0.56);
+  text-align: center;
+}
+.layanan-kami-dapat-container {
+  position: absolute;
+  top: 1172px;
+  left: 100px;
+  font-size: var(--font-size-23xl);
+  display: inline-block;
+  width: 630px;
+  color: var(--color-gray-100);
+}
+.line-div {
+  position: absolute;
+  top: 1359.5px;
+  left: 98.5px;
+  border-top: 3px solid var(--color-firebrick-200);
+  box-sizing: border-box;
+  width: 298px;
+  height: 3px;
+}
+.lorem-ipsum-dolor {
+  position: absolute;
+  top: 1410px;
+  left: 100px;
+  line-height: 32px;
+  font-weight: 500;
+  color: var(--color-gray-100);
+  display: inline-block;
+  width: 504px;
+}
+.layanan-pengiriman-barang,
+.layanan-pengiriman-kilat,
+.revoship-menawarkan-solusi {
+  position: absolute;
+  top: 1484px;
+  left: 942px;
+  line-height: 32px;
+  font-weight: 500;
+  color: var(--color-black);
+  display: inline-block;
+  width: 398px;
+}
+.layanan-pengiriman-kilat,
+.revoship-menawarkan-solusi {
+  top: 1800px;
+}
+.layanan-pengiriman-kilat {
+  top: 2093.44px;
+}
+.rectangle-div,
+.website-child1,
+.website-child2 {
+  position: absolute;
+  top: 1557px;
+  left: 100px;
+  border-radius: var(--br-3xs);
+  background-color: var(--color-aliceblue);
+  width: 610px;
+  height: 226px;
+}
+.website-child1,
+.website-child2 {
+  top: 1819px;
+}
+.website-child2 {
+  top: 2081px;
+}
+.client-yang-memercayai-container,
+.pengguna-di-seluruh-container,
+.pengguna-di-seluruh-container1 {
+  position: absolute;
+  top: 1679px;
+  left: 148px;
+  font-size: var(--font-size-5xl);
+  line-height: 32px;
+  font-weight: 600;
+  color: var(--color-gray-100);
+}
+.client-yang-memercayai-container,
+.pengguna-di-seluruh-container1 {
+  top: 1941px;
+}
+.client-yang-memercayai-container {
+  top: 2203px;
+}
+.b,
+.b1,
+.b2 {
+  position: absolute;
+  top: 1611px;
+  left: 148px;
+  font-size: var(--font-size-13xl);
+  line-height: 32px;
+  color: var(--color-firebrick-200);
+}
+.b1,
+.b2 {
+  top: 1873px;
+}
+.b2 {
+  top: 2135px;
+}
+.ellipse-div,
+.website-child3,
+.website-child4 {
+  position: absolute;
+  top: 1390px;
+  left: 835px;
+  border-radius: 50%;
+  background-color: var(--color-firebrick-200);
+  width: 85px;
+  height: 85px;
+}
+.website-child3,
+.website-child4 {
+  top: 1706px;
+}
+.website-child4 {
+  top: 1999.44px;
+}
+.truck-moving-icon {
+  position: absolute;
+  top: 1412px;
+  left: 857px;
+  width: 42px;
+  height: 42px;
+  overflow: hidden;
+}
+.pengiriman-domestik,
+.pengiriman-internasional,
+.pengiriman-kilat {
+  position: absolute;
+  top: 1416px;
+  left: 940px;
+  font-size: var(--font-size-13xl);
+  line-height: 32px;
+  color: var(--color-firebrick-200);
+}
+.pengiriman-internasional,
+.pengiriman-kilat {
+  top: 1732px;
+}
+.pengiriman-kilat {
+  top: 2025.44px;
+}
+.vector-icon,
+.vector-icon1 {
+  position: absolute;
+  height: 1.03%;
+  width: 2.93%;
+  top: 42.28%;
+  right: 37.55%;
+  bottom: 56.69%;
+  left: 59.51%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.vector-icon1 {
+  width: 2.92%;
+  top: 40.47%;
+  right: 37.57%;
+  bottom: 58.51%;
+}
+.website-child5 {
+  position: absolute;
+  top: 2459px;
+  left: 0;
+  background-color: var(--color-firebrick-300);
+  width: 1442px;
+  height: 878px;
+}
+.keragaman-pengiriman,
+.pengepakan-kualitas,
+.tim-profesional-revoship {
+  position: absolute;
+  top: 2983px;
+  left: 102px;
+  font-size: var(--font-size-13xl);
+}
+.keragaman-pengiriman,
+.tim-profesional-revoship {
+  left: 519px;
+}
+.keragaman-pengiriman {
+  left: 944px;
+}
+.barang-anda-sudah {
+  position: absolute;
+  top: 2523px;
+  left: 96px;
+  font-size: var(--font-size-23xl);
+  display: inline-block;
+  width: 508px;
+}
+.website-child6 {
+  position: absolute;
+  top: 2657.5px;
+  left: 98.5px;
+  border-top: 3px solid var(--color-white);
+  box-sizing: border-box;
+  width: 298px;
+  height: 3px;
+}
+.image-10-icon,
+.image-11-icon,
+.image-9-icon {
+  position: absolute;
+  top: 2720px;
+  left: 100px;
+  border-radius: var(--br-3xs);
+  width: 389px;
+  height: 227px;
+  object-fit: cover;
+}
+.image-10-icon,
+.image-11-icon {
+  top: 2719px;
+  left: 520px;
+  width: 400px;
+  height: 228px;
+}
+.image-11-icon {
+  left: 944px;
+  width: 396px;
+}
+.di-balik-setiap,
+.kami-menghadirkan-beragam,
+.setiap-barang-yang {
+  position: absolute;
+  top: 3035px;
+  left: 102px;
+  line-height: 32px;
+  font-weight: 500;
+  display: inline-block;
+  width: 398px;
+}
+.di-balik-setiap,
+.kami-menghadirkan-beragam {
+  left: 522px;
+}
+.kami-menghadirkan-beragam {
+  left: 947px;
+}
+.pelanggan-kami {
+  color: var(--color-gray-100);
+}
+.kepercayaan-pelanggan-kami-container {
+  position: absolute;
+  top: 3409px;
+  left: calc(50% - 301px);
+  font-size: var(--font-size-23xl);
+  line-height: 32px;
+  text-align: center;
+  color: var(--color-firebrick-300);
+}
+.website-child7 {
+  position: absolute;
+  top: 3469.5px;
+  left: 571.5px;
+  border-top: 3px solid var(--color-firebrick-200);
+  box-sizing: border-box;
+  width: 298px;
+  height: 3px;
+}
+.website-child10,
+.website-child8,
+.website-child9 {
+  position: absolute;
+  top: 3555px;
+  left: 100px;
+  border-radius: var(--br-3xs);
+  background-color: var(--color-firebrick-300);
+  width: 400px;
+  height: 466px;
+}
+.website-child10,
+.website-child9 {
+  left: 521px;
+}
+.website-child10 {
+  left: 942px;
+}
+.gita-sekar-andarini,
+.nazra-syifa,
+.satya-wikananda {
+  position: absolute;
+  top: 3933px;
+  left: 193px;
+  line-height: 28px;
+  font-weight: 600;
+}
+.gita-sekar-andarini,
+.satya-wikananda {
+  left: 614px;
+}
+.gita-sekar-andarini {
+  left: 1035px;
+}
+.revou,
+.techgoods-co,
+.trendycloth {
+  position: absolute;
+  top: 3961px;
+  left: 193px;
+  font-size: var(--font-size-xs);
+  line-height: 28px;
+}
+.revou,
+.trendycloth {
+  left: 614px;
+}
+.trendycloth {
+  left: 1035px;
+}
+.kami-telah-bekerja,
+.saya-adalah-seorang,
+.saya-telah-menjadi {
+  position: absolute;
+  top: 3637px;
+  left: 120px;
+  font-size: var(--font-size-sm);
+  line-height: 28px;
+  display: inline-block;
+  width: 346px;
+}
+.kami-telah-bekerja,
+.saya-adalah-seorang {
+  left: 543px;
+}
+.saya-adalah-seorang {
+  left: 962px;
+}
+.quote-right-icon,
+.quote-right-icon1,
+.quote-right-icon2 {
+  position: absolute;
+  top: 3579px;
+  left: 120px;
+  width: 52px;
+  height: 52px;
+  overflow: hidden;
+}
+.quote-right-icon1,
+.quote-right-icon2 {
+  left: 541px;
+}
+.quote-right-icon2 {
+  left: 962px;
+}
+.website-child11,
+.website-child12,
+.website-child13 {
+  position: absolute;
+  top: 3920.5px;
+  left: 121.5px;
+  border-top: 1px solid var(--color-firebrick-100);
+  box-sizing: border-box;
+  width: 345px;
+  height: 1px;
+}
+.website-child12,
+.website-child13 {
+  left: 542.5px;
+}
+.website-child13 {
+  left: 963.5px;
+}
+.ellipse-icon,
+.ellipse-icon1,
+.ellipse-icon2 {
+  position: absolute;
+  top: 3933px;
+  left: 122px;
+  border-radius: 50%;
+  width: 58px;
+  height: 58px;
+  object-fit: cover;
+}
+.ellipse-icon1,
+.ellipse-icon2 {
+  left: 964px;
+}
+.ellipse-icon2 {
+  left: 543px;
+}
+.group-icon {
+  position: absolute;
+  top: 4051px;
+  left: 688px;
+  width: 63px;
+  height: 17px;
+}
+.website {
+  position: relative;
+  background-color: var(--color-white);
+  width: 100%;
+  height: 4982px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--color-white);
+  font-family: var(--font-plus-jakarta-sans);
+}
