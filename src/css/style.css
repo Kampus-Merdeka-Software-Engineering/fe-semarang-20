@@ -1,0 +1,325 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+@import "utils.css";
+
+:root {
+  --primary: "#BB2525";
+  --secondary: "#CE4A4A";
+  --black: "#1E293B";
+
+  /* fonts */
+  --font-plus-jakarta-sans: "Plus Jakarta Sans", sans-serif;
+  --font-bebas-neue: "Bebas Neue", sans-serif;
+
+  /* Utility variable font sizes */
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 1rem;
+  --font-size-md: 1.25rem;
+  --font-size-lg: 1.5rem;
+  --font-size-xl: 1.75rem;
+  --font-size-xxl: 2rem;
+  --font-size-xxxl: 3rem;
+}
+
+* {
+  font-family: var(--font-plus-jakarta-sans);
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* Container Class */
+.container {
+  max-width: 1200px; /* Adjust the maximum width as needed */
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.text-primary {
+  color: #bb2525;
+}
+.text-black {
+  color: #1e293b;
+}
+.text-white {
+  color: #fff;
+}
+
+h1.logo {
+  font-family: var(--font-bebas-neue);
+  font-size: var(--font-size-xxxl);
+  color: #bb2525;
+}
+
+nav a {
+  font-size: var(--font-size-sm);
+  color: #1e293b;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  color: #bb2525;
+}
+
+nav a.active {
+  color: #bb2525;
+  font-weight: 600;
+  padding-bottom: 0.4rem;
+  position: relative;
+}
+
+nav a.active::after {
+  content: ""; /* Add content to the pseudo-element */
+  display: block; /* Make it a block-level element */
+  width: 50%; /* Set the desired width (half in this case) */
+  height: 2px; /* Set the height/thickness of the line */
+  background-color: #bb2525; /* Set the color of the line */
+  position: absolute; /* Position it absolutely within the anchor */
+  bottom: -2px; /* Adjust the position to place it under the text */
+  left: 0; /* Center the line under the text (50% - half of the width) */
+}
+
+/* Button Class */
+.button {
+  background-color: #ce4a4a;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  width: 150px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  color: #fff;
+  cursor: pointer;
+
+  /* Hover Styles */
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Hover State */
+.button:hover {
+  background-color: #aa3333; /* Change the background color on hover */
+}
+
+.btn-outline {
+  width: 95px;
+  height: 32px;
+  flex-shrink: 0;
+  border-radius: 6px;
+  border: 1px solid #bb2525;
+  background: #fff;
+
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.btn-outline:hover {
+  background: #ce4a4a;
+  color: #fff;
+}
+
+.btn-primary {
+  width: 95px;
+  height: 32px;
+  flex-shrink: 0;
+  border-radius: 6px;
+  border: 1px solid #bb2525;
+  background: #bb2525;
+
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: #ce4a4a;
+  border: 1px solid #ce4a4a;
+}
+
+.hero-section img.hero-section__hero-img {
+  width: 50%;
+  height: 100vh;
+  flex-shrink: 0;
+  border-radius: 100px 0px;
+  object-fit: cover;
+}
+
+.hero-section h2.hero-section__hero-tagline {
+  color: #1e293b;
+}
+
+.hero-section input.hero-section__hero-input {
+  height: 2.5rem;
+  flex-shrink: 0;
+  border: 1px solid #bb2525;
+  border-radius: 6px;
+  padding-left: 0.3rem;
+}
+
+.hero-section input.hero-section__hero-input::placeholder {
+  padding-left: 0.3rem;
+}
+
+.hero-section button.hero-section__btn-check {
+  background: #bb2525;
+  border-radius: 6px;
+  color: #fff;
+  border: 1px solid #bb2525;
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+.hero-section button.hero-section__btn-check:hover {
+  background: #aa3333;
+  border: 1px solid #aa3333;
+}
+
+img.hero-client-img {
+  width: 100%;
+  /* height: 30%; */
+  border: 1px solid black;
+}
+
+h2.about-section__tagline {
+  padding-bottom: 0.4rem;
+  position: relative;
+}
+
+h2.about-section__tagline::after {
+  content: ""; /* Add content to the pseudo-element */
+  display: block; /* Make it a block-level element */
+  width: 50%; /* Set the desired width (half in this case) */
+  height: 2px; /* Set the height/thickness of the line */
+  background-color: #bb2525; /* Set the color of the line */
+  position: absolute; /* Position it absolutely within the anchor */
+  bottom: -8px; /* Adjust the position to place it closer to the text */
+  left: 0; /* Center the line under the text (adjust this value as needed) */
+}
+
+.about-section .about-section__rectangle {
+  background: #e2e8f0;
+  border-radius: 10px;
+  padding: 2rem;
+}
+
+.section-advantage {
+  background: #bb2525;
+}
+
+h2.section-title {
+  position: relative;
+  padding-bottom: 0.4rem;
+}
+
+h2.section-title::after {
+  content: ""; /* Add content to the pseudo-element */
+  display: block; /* Make it a block-level element */
+  width: 50%; /* Set the desired width (half in this case) */
+  height: 2px; /* Set the height/thickness of the line */
+  background-color: #fff; /* Set the color of the line */
+  position: absolute; /* Position it absolutely within the anchor */
+  bottom: -8px; /* Adjust the position to place it closer to the text */
+  left: 0; /* Center the line under the text (adjust this value as needed) */
+}
+
+.advantage-item img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.section-testimoni h2 {
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 0.4rem;
+  position: relative;
+}
+
+.section-testimoni h2::after {
+  content: ""; /* Add content to the pseudo-element */
+  display: block; /* Make it a block-level element */
+  width: 50%; /* Set the desired width (half in this case) */
+  height: 2px; /* Set the height/thickness of the line */
+  background-color: #fff; /* Set the color of the line */
+  position: absolute; /* Position it absolutely within the anchor */
+  bottom: -8px; /* Adjust the position to place it closer to the text */
+  left: 0; /* Center the line under the text (adjust this value as needed) */
+}
+
+.testimoni-item {
+  background-color: #bb2525;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.testimoni-item .profile {
+  border-top: 1px solid black;
+  border: 1px solid black;
+}
+
+.contact-us {
+  background-image: url("../../public/images/bg-form.svg");
+  width: 100%;
+  height: auto;
+}
+
+.contact-us-item img {
+  width: 80%;
+  border-radius: 10px;
+}
+
+.contact-us-form {
+  border-radius: 10px;
+  background: #fff;
+  width: 100%;
+  padding: 1.5rem;
+}
+
+.contact-us-input {
+  height: 2.5rem;
+  flex-shrink: 0;
+  border: 1px solid #bb2525;
+  border-radius: 6px;
+  padding-left: 0.3rem;
+}
+
+textarea.contact-us-textarea {
+  height: 2.5rem;
+  flex-shrink: 0;
+  border: 1px solid #bb2525;
+  border-radius: 6px;
+  padding-left: 0.3rem;
+}
+
+textarea.contact-us-textarea[placeholder] {
+  padding: 1rem;
+}
+
+.contact-us-form button {
+  background-color: #bb2525;
+  border-radius: 8px;
+  font-size: 1rem;
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  border: 1px solid #bb2525;
+  margin-top: 3rem;
+}
+
+footer {
+  background: #1e293b;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+footer .footer-title {
+  font-family: var(--font-bebas-neue);
+  color: #E8C9C9;
+}
