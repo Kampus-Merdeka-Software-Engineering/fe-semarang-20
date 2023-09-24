@@ -323,3 +323,41 @@ footer .footer-title {
   font-family: var(--font-bebas-neue);
   color: #E8C9C9;
 }
+
+/* Responsive for mobile and tablet */
+
+/* Tablet Styles */
+@media screen and (max-width: 768px) {
+  .section-advantage h2.section-title {
+    margin: 0 auto;
+    font-size: 28px;
+    width: 80%;
+    text-align: center;
+  }
+  .section-advantage h2::after {
+    display: none;
+  }
+
+  .advantage {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 480px) {
+  .section-advantage h2.section-title {
+    margin: 0 auto;
+    font-size: 28px;
+    width: 80%;
+    text-align: center;
+  }
+  .section-advantage h2::after {
+    display: none;
+  }
+
+  .advantage {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}

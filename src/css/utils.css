@@ -708,13 +708,3 @@ This is an utilites class
 .h-screen {
   height: 100vh;
 }
-
-/* Responsive for mobile and tablet */
-
-/* Tablet Styles */
-@media screen and (max-width: 768px) {
-}
-
-/* Mobile Styles */
-@media screen and (max-width: 480px) {
-}
