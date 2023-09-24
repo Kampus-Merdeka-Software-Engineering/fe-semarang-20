@@ -4,17 +4,13 @@
 - Frontend Developer: Nazra Syifa & Richard Petrus Haposan Siagian
 
 ## Tutor Instalasi
-1. Install bun
-```sh
-npm install -g bun # the last `npm` command you'll ever need
-```
 
-2. Di dalam direktori projectnya, install dependencies
+1. Di dalam direktori projectnya, install dependencies
 ```sh
 npm install
 ```
 
-3. Untuk run projectnya bisa pakai command ini
+2. Untuk run projectnya bisa pakai command ini
 ```sh
 npm start dev
 ```
