@@ -9,7 +9,7 @@ This is an utilites class
 }
 
 .underline-none {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 /* Text Size Utilities */
@@ -205,6 +205,35 @@ This is an utilites class
   align-self: stretch;
 }
 
+/* Border Radius Utilities */
+.rounded-none {
+  border-radius: 0;
+}
+
+.rounded-sm {
+  border-radius: 0.125rem; /* Adjust as needed */
+}
+
+.rounded {
+  border-radius: 0.25rem; /* Default border radius */
+}
+
+.rounded-md {
+  border-radius: 0.375rem; /* Adjust as needed */
+}
+
+.rounded-lg {
+  border-radius: 0.5rem; /* Adjust as needed */
+}
+
+.rounded-xl {
+  border-radius: 1rem; /* Adjust as needed */
+}
+
+.rounded-full {
+  border-radius: 9999px; /* Circular border radius */
+}
+
 /* 2. Grid */
 /* Grid Container Utilities */
 .grid {
@@ -247,6 +276,47 @@ This is an utilites class
 
 .gap-5 {
   gap: 10rem;
+}
+
+/* Grid Order Utilities */
+.order-1 {
+  order: 1;
+}
+
+.order-2 {
+  order: 2;
+}
+
+.order-3 {
+  order: 3;
+}
+
+.order-4 {
+  order: 4;
+}
+
+.order-5 {
+  order: 5;
+}
+
+.order-6 {
+  order: 6;
+}
+
+.order-7 {
+  order: 7;
+}
+
+.order-8 {
+  order: 8;
+}
+
+.order-9 {
+  order: 9;
+}
+
+.order-10 {
+  order: 10;
 }
 
 /* Justify Content Utilities */
@@ -328,6 +398,10 @@ This is an utilites class
 
 .m-4 {
   margin: 2rem;
+}
+
+.mx-auto {
+  margin: 0 auto;
 }
 
 /* Margin Top Utilities */

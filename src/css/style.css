@@ -13,7 +13,7 @@
   --font-bebas-neue: "Bebas Neue", sans-serif;
 
   /* Utility variable font sizes */
-  --font-size-xs: 0.75rem;
+  --font-size-xs: .75rem;
   --font-size-sm: 1rem;
   --font-size-md: 1.25rem;
   --font-size-lg: 1.5rem;
@@ -29,6 +29,7 @@
 
 body {
   margin: 0;
+  overflow-x: hidden;
 }
 
 /* Container Class */
@@ -70,7 +71,7 @@ nav a:hover {
 nav a.active {
   color: #bb2525;
   font-weight: 600;
-  padding-bottom: 0.4rem;
+  padding-bottom: .4rem;
   position: relative;
 }
 
@@ -149,6 +150,23 @@ nav a.active::after {
   object-fit: cover;
 }
 
+.hero-section img.hero-section__dots {
+  position: absolute;
+  top: 20%;
+  left: 2%;
+  z-index: -1;
+}
+
+.hero-section img.hero-section__pesawat {
+  position: absolute;
+  top: -80%;
+  right: -25%;
+  z-index: -1;
+  transform: scaleX(-1);
+  filter: grayscale(100%);
+  opacity: 15%;
+}
+
 .hero-section h2.hero-section__hero-tagline {
   color: #1e293b;
 }
@@ -158,11 +176,11 @@ nav a.active::after {
   flex-shrink: 0;
   border: 1px solid #bb2525;
   border-radius: 6px;
-  padding-left: 0.3rem;
+  padding-left: .3rem;
 }
 
 .hero-section input.hero-section__hero-input::placeholder {
-  padding-left: 0.3rem;
+  padding-left: .3rem;
 }
 
 .hero-section button.hero-section__btn-check {
@@ -187,7 +205,7 @@ img.hero-client-img {
 }
 
 h2.about-section__tagline {
-  padding-bottom: 0.4rem;
+  padding-bottom: .4rem;
   position: relative;
 }
 
@@ -206,6 +224,12 @@ h2.about-section__tagline::after {
   background: #e2e8f0;
   border-radius: 10px;
   padding: 2rem;
+
+  transition: all 0.3s ease;
+}
+
+.about-section .about-section__rectangle:hover {
+  background: #d5dce5;
 }
 
 .section-advantage {
@@ -214,7 +238,7 @@ h2.about-section__tagline::after {
 
 h2.section-title {
   position: relative;
-  padding-bottom: 0.4rem;
+  padding-bottom: .4rem;
 }
 
 h2.section-title::after {
@@ -236,7 +260,7 @@ h2.section-title::after {
 .section-testimoni h2 {
   margin: 0 auto;
   text-align: center;
-  padding-bottom: 0.4rem;
+  padding-bottom: .4rem;
   position: relative;
 }
 
@@ -264,6 +288,8 @@ h2.section-title::after {
 
 .contact-us {
   background-image: url("../../public/images/bg-form.svg");
+  /* background-repeat: no-repeat; */
+  background-size: cover;
   width: 100%;
   height: auto;
 }
@@ -285,15 +311,15 @@ h2.section-title::after {
   flex-shrink: 0;
   border: 1px solid #bb2525;
   border-radius: 6px;
-  padding-left: 0.3rem;
+  padding-left: .3rem;
 }
 
 textarea.contact-us-textarea {
-  height: 2.5rem;
   flex-shrink: 0;
   border: 1px solid #bb2525;
   border-radius: 6px;
-  padding-left: 0.3rem;
+  padding-left: .3rem;
+  resize: none;
 }
 
 textarea.contact-us-textarea[placeholder] {
@@ -321,7 +347,73 @@ footer {
 
 footer .footer-title {
   font-family: var(--font-bebas-neue);
-  color: #E8C9C9;
+  color: #e8c9c9;
+}
+
+
+/* Tentang Kami */
+section.section-about > img.img-section-one {
+  height: 60vh;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+section.section-about > img.section-about-dots {
+  position: absolute;
+  z-index: -1;
+  top: 18%;
+  left: 2%;
+}
+
+.vision {
+  background-image: url("../../public/images/bg-form.svg");
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  width: 100%;
+  height: auto;
+}
+
+.mission h2.mission-title {
+  position: relative;
+}
+
+.mission h2.mission-title::after {
+  content: ""; /* Add content to the pseudo-element */
+  display: block; /* Make it a block-level element */
+  width: 10%; /* Set the desired width (half in this case) */
+  height: 3px; /* Set the height/thickness of the line */
+  background-color: #bb2525; /* Set the color of the line */
+  position: absolute; /* Position it absolutely within the anchor */
+  bottom: -8px; /* Adjust the position to place it closer to the text */
+  left: 0; /* Center the line under the text (adjust this value as needed) */
+}
+
+section.mission img.mission-dots {
+  position: absolute;
+  z-index: -1;
+  right: 2%;
+  opacity: 20%;
+}
+
+.members {
+  background-image: url("../../public/images/bg-form.svg");
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  width: 100%;
+  height: auto;
+}
+
+.member-item {
+  border-radius: 10px;
+  background: #fff;
+  width: 100%;
+  padding: 1.5rem;
+}
+
+.member-item > img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
 }
 
 /* Responsive for mobile and tablet */
@@ -342,7 +434,7 @@ footer .footer-title {
     display: grid;
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
-  .section-testimoni h2.section-testimoni{
+  .section-testimoni h2.section-testimoni {
     margin: 0 auto;
     font-size: 28px;
     width: 80%;
@@ -356,25 +448,63 @@ footer .footer-title {
     display: grid;
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
-  .contact{
+  .contact {
     display: grid;
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
-  .contact-us h2{
+  .contact-us h2 {
     width: 100%;
     text-align: center;
   }
-  .contact-us p{
+  .contact-us p {
     width: 100%;
     text-align: center;
   }
-  .contact-us img{
+  .contact-us img {
     display: none;
+  }
+
+  .about {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 32px;
+  }
+
+  h2.about-section__tagline {
+    width: 100%;
+  }
+
+  .feature {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-section__rectangle {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 16px;
   }
 }
 
 /* Mobile Styles */
 @media screen and (max-width: 480px) {
+  .hero {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero-section img.hero-section__dots {
+    display: none;
+  }
+
+  .hero img.hero-section__hero-img {
+    width: 100%;
+    height: 37.5rem;
+    flex-shrink: 0;
+    border-radius: 100px 0px;
+    display: none;
+    /* object-fit: cover; */
+  }
   .section-advantage h2.section-title {
     margin: 0 auto;
     font-size: 28px;
@@ -389,7 +519,7 @@ footer .footer-title {
     display: grid;
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
-  .section-testimoni h2.section-testimoni{
+  .section-testimoni h2.section-testimoni {
     margin: 0 auto;
     font-size: 28px;
     width: 80%;
@@ -403,22 +533,40 @@ footer .footer-title {
     display: grid;
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
-  .contact{
+  .contact {
     display: grid;
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
-  .contact-us h2{
+  .contact-us h2 {
     width: 100%;
     text-align: center;
   }
-  .contact-us p{
+  .contact-us p {
     width: 100%;
     text-align: center;
   }
-  .contact-us img{
+  .contact-us img {
     display: none;
   }
+
+  .about {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 32px;
+  }
+
+  h2.about-section__tagline {
+    width: 100%;
+  }
+
+  .feature {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-section__rectangle {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 16px;
+  }
 }
-
-
-

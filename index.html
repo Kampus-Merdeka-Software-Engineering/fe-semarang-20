@@ -12,26 +12,38 @@
         <nav class="flex flex-row flex-wrap justify-between items-center">
           <h1 class="logo">REVOSHIP</h1>
           <div class="flex flex-row flex-wrap gap-3">
-            <a href="#" class="active">Tentang Kami</a>
-            <a href="#">Lokasi</a>
-            <a href="#">Cek Ongkir</a>
+            <a href="#" class="active">Beranda</a>
+            <a href="#">Cek Harga</a>
+            <a href="#">Layanan</a>
+            <a href="tentang-kami.html">Tentang Kami</a>
           </div>
           <div class="flex flex-row flex-wrap gap-3">
-            <button class="btn-outline">Masuk</button>
-            <button class="btn-primary">dsad</button>
+            <button class="btn-primary" style="width: 100%; padding: 0 1rem">
+              Mari bergabung
+            </button>
           </div>
         </nav>
       </header>
 
       <!-- Hero section -->
       <section class="hero-section pb-4">
-        <div class="flex flex-row gap-3">
+        <div class="flex flex-row gap-3 hero">
           <img
-            src="./public/images/hero.png"
+            src="./public/images/dots.svg"
+            alt="dots-image"
+            class="hero-section__dots"
+          />
+          <img
+            src="./public/images/hero.webp"
             alt="hero-image"
             class="hero-section__hero-img"
           />
           <div class="p-1 flex flex-column">
+            <img
+              src="./public/images/pesawat.webp"
+              alt="pesawat-image"
+              class="hero-section__pesawat w-full"
+            />
             <h2 class="font-extrabold text-5xl hero-section__hero-tagline">
               Solusi Pengiriman
               <span class="text-primary">Terpercaya</span> untuk
@@ -81,14 +93,8 @@
           Layanan kami dapat
           <span class="text-primary">Mempermudah</span> pengiriman barang Anda
         </h2>
-        <div class="grid grid-cols-2 gap-5">
+        <div class="grid grid-cols-2 gap-5 about">
           <div class="flex flex-column">
-            <p class="leading-relaxed">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Mattis
-              pellentesque id nibh tortor id aliquet.
-            </p>
-
             <div class="about-section__rectangle w-full mb-4">
               <div class="flex flex-column gap-3">
                 <span class="text-3xl font-bold text-primary">200+</span>
@@ -120,7 +126,7 @@
             </div>
           </div>
           <div class="flex flex-column">
-            <div class="flex flex-row gap-3 mb-4">
+            <div class="flex flex-row gap-3 mb-4 feature">
               <img src="./public/images/Group 48.svg" class="w-1-6" />
               <div class="flex flex-column gap-2">
                 <span class="text-3xl font-bold text-primary"
@@ -136,7 +142,7 @@
               </div>
             </div>
 
-            <div class="flex flex-row gap-3 mb-4">
+            <div class="flex flex-row gap-3 mb-4 feature">
               <img src="./public/images/Group 49.svg" class="w-1-6" />
               <div class="flex flex-column gap-2">
                 <span class="text-3xl font-bold text-primary"
@@ -152,7 +158,7 @@
               </div>
             </div>
 
-            <div class="flex flex-row gap-3 mb-4">
+            <div class="flex flex-row gap-3 mb-4 feature">
               <img src="./public/images/Group 50.svg" class="w-1-6" />
               <div class="flex flex-column gap-2">
                 <span class="text-3xl font-bold text-primary"
@@ -181,7 +187,7 @@
         <div class="grid grid-cols-3 gap-4 mt-4 advantage">
           <div class="advantage-item">
             <img
-              src="public/images/bench-accounting-MGaFENpDCsw-unsplash.jpg"
+              src="public/images/bench-accounting-MGaFENpDCsw-unsplash.webp"
               alt="item-1"
               class="mb-3"
             />
@@ -197,7 +203,7 @@
 
           <div class="advantage-item">
             <img
-              src="public/images/medium-shot-delivery-man-carrying-box.jpg"
+              src="public/images/medium-shot-delivery-man-carrying-box.webp"
               alt="item-1"
               class="mb-3"
             />
@@ -213,7 +219,7 @@
 
           <div class="advantage-item">
             <img
-              src="public/images/young-man-delivering-package-customer-home-delivery.jpg"
+              src="public/images/young-man-delivering-package-customer-home-delivery.webp"
               alt="item-1"
               class="mb-3"
             />
@@ -294,7 +300,7 @@
               menanggapi pertanyaan kamu
             </p>
             <img
-              src="public/images/young-man-delivering-package-customer-home-delivery.jpg"
+              src="public/images/young-man-delivering-package-customer-home-delivery.webp"
               alt="item-1"
               class="mb-3"
             />
@@ -305,37 +311,44 @@
                 >Form Data</span
               >
 
-              <form action="#">
+              <form action="#" id="contact-form">
                 <input
                   class="contact-us-input w-full mt-3"
                   type="text"
-                  name="cek-resi"
-                  id="cek-resi"
+                  name="name"
+                  id="fullname-input"
                   placeholder="Nama Anda"
+                  required
                 />
-
+                <div class="text-error" id="fullname-error"></div>
                 <input
                   class="contact-us-input w-full mt-3"
                   type="email"
-                  name="cek-resi"
-                  id="cek-resi"
+                  name="email"
+                  id="email-input"
                   placeholder="Masukan email"
+                  required
                 />
-
+                <div class="text-error" id="email-error"></div>
                 <input
                   class="contact-us-input w-full mt-3"
                   type="text"
-                  name="cek-resi"
-                  id="cek-resi"
+                  name="company"
+                  id="company-input"
                   placeholder="Nama perusahaan"
+                  required
                 />
-
+                <div class="text-error" id="company-error"></div>
                 <textarea
-                  class="contact-us-textarea mt-4 w-full h-full"
+                  class="contact-us-textarea mt-4 w-full"
                   placeholder="Masukan pesan"
+                  rows="4"
+                  name="message"
+                  id="message-input"
+                  required
                 ></textarea>
-
-                <button>Kirim pertanyaan</button>
+                <div class="text-error" id="message-error"></div>
+                <button type="submit" id="btn-send">Kirim pertanyaan</button>
               </form>
             </div>
           </div>
@@ -345,7 +358,7 @@
 
     <footer>
       <div class="container">
-        <div class="flex flex-row items-center" style="gap: 5rem">
+        <div class="flex flex-row items-center" style="gap: 80px">
           <span class="footer-title text-5xl">REVOSHIP</span>
           <p class="w-1-2 text-white leading-loose">
             Kami memandang ke depan, dan layanan pengiriman kami dirancang untuk
@@ -355,7 +368,7 @@
         <div class="mt-4 mb-4 flex flex-row flex-wrap justify-between gap-4">
           <div class="flex flex-column justify-center gap-3">
             <span class="text-white font-semibold">Bantuan & Panduan</span>
-            <a href="#" class="text-white text-base underline-none"
+            <a href="tentang-kami" class="text-white text-base underline-none"
               >Tentang Kami</a
             >
             <a href="#" class="text-white text-base underline-none">Lokasi</a>
@@ -375,7 +388,7 @@
           </div>
         </div>
         <div class="flex flex-row justify-center">
-          <span class="text-center mt-4" style="color: #78828A"
+          <span class="text-center mt-4" style="color: #78828a"
             >© Copyright 2023 PT. Revoship. All rights reserved.</span
           >
         </div>
