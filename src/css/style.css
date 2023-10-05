@@ -627,6 +627,23 @@ section.mission img.mission-dots {
   .member-item {
     text-align: center;
   }
+
+  .service-section h1{
+    margin-top: 1rem;
+  }
+
+  .tagline {
+    font-size: 0.875rem;
+  }
+
+  .orders {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  .modal{
+    width: 80%;
+  }
 }
 
 /* Mobile Styles */
@@ -758,5 +775,22 @@ section.mission img.mission-dots {
 
   .member-item {
     text-align: center;
+  }
+
+  .service-section h1{
+    margin-top: 1rem;
+  }
+
+  .tagline {
+    font-size: 0.875rem;
+  }
+
+  .orders {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  .modal{
+    width: 80%;
   }
 }
