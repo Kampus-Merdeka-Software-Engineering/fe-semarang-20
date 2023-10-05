@@ -23,7 +23,7 @@
       </nav>
     </header>
     <section class="container service-section">
-      <div class="flex flex-column justify-center w-full ">
+      <div class="flex flex-column justify-center w-full">
         <h1
           class="text-4xl font-extrabold w-3-4 text-center text-primary mx-auto"
         >
@@ -272,6 +272,55 @@
           </div>
           <div class="flex flex-column justify-center w-full">
             <form action="#" id="order-form" class="flex flex-column gap-1">
+              <label for="nama-pengirim-input">
+                <span class="text-primary">Nama Pengirim</span>
+                <input
+                  class="contact-us-input w-full mt-3"
+                  type="text"
+                  name="nama_pengirim"
+                  id="nama-pengirim-input"
+                  placeholder="Satya Wikananda"
+                />
+              </label>
+              <div class="text-error" id="nama-pengirim-error"></div>
+
+              <label for="nama-penerima-input">
+                <span class="text-primary">Nama penerima</span>
+                <input
+                  class="contact-us-input w-full mt-3"
+                  type="text"
+                  name="nama_penerima"
+                  id="nama-penerima-input"
+                  placeholder="Gita Sekar"
+                />
+              </label>
+              <div class="text-error" id="nama-penerima-error"></div>
+
+              <label for="alamat-input">
+                <span class="text-primary mt-4">Alamat Asal</span>
+                <input
+                  class="contact-us-input w-full mt-3"
+                  type="text"
+                  name="alamat"
+                  min="0"
+                  id="alamat-input"
+                  placeholder="Jalan Kuningan"
+                />
+              </label>
+              <div class="text-error" id="alamat-error"></div>
+
+              <label for="alamat-tujuan-input">
+                <span class="text-primary">Alamat tujuan</span>
+                <input
+                  class="contact-us-input w-full mt-3"
+                  type="text"
+                  name="alamat_tujuan"
+                  id="alamat-tujuan-input"
+                  placeholder="Jalan Gatot Subroto"
+                />
+              </label>
+              <div class="text-error" id="alamat-tujuan-error"></div>
+
               <label for="berat-barang-input">
                 <span class="text-primary">Berat Barang (kg)</span>
                 <input
@@ -284,18 +333,18 @@
                 />
               </label>
               <div class="text-error" id="berat-barang-error"></div>
-              <label for="alamat-input">
-                <span class="text-primary mt-4">Alamat</span>
+
+              <label for="no-telpon-input">
+                <span class="text-primary">No Telepon</span>
                 <input
                   class="contact-us-input w-full mt-3"
                   type="text"
-                  name="alamat"
-                  min="0"
-                  id="alamat-input"
-                  placeholder="Masukan alamat"
+                  name="no_telpon"
+                  id="no-telpon-input"
+                  placeholder="08123486673"
                 />
               </label>
-              <div class="text-error" id="alamat-error"></div>
+              <div class="text-error" id="no-telpon-error"></div>
               <button type="submit">Kirim sekarang</button>
             </form>
           </div>

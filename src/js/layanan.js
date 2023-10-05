@@ -55,9 +55,63 @@ const sendOrderData = async (e, { price, type }) => {
     alamatError.innerHTML = "";
   }
 
+  // Validate Nama Pengirim
+  const namaPengirimInput = document.querySelector(
+    "#nama-pengirim-input"
+  ).value;
+  const namaPengirimError = document.querySelector("#nama-pengirim-error");
+
+  if (namaPengirimInput.trim() === "") {
+    namaPengirimError.innerHTML = templateError(
+      "Nama Pengirim tidak boleh kosong"
+    );
+    isValid = false;
+  } else {
+    namaPengirimError.innerHTML = "";
+  }
+
+  // Validate Nama Penerima
+  const namaPenerimaInput = document.querySelector(
+    "#nama-penerima-input"
+  ).value;
+  const namaPenerimaError = document.querySelector("#nama-penerima-error");
+
+  if (namaPenerimaInput.trim() === "") {
+    namaPenerimaError.innerHTML = templateError(
+      "Nama Penerima tidak boleh kosong"
+    );
+    isValid = false;
+  } else {
+    namaPenerimaError.innerHTML = "";
+  }
+
+  // Validate Alamat Tujuan
+  const alamatTujuanInput = document.querySelector(
+    "#alamat-tujuan-input"
+  ).value;
+  const alamatTujuanError = document.querySelector("#alamat-tujuan-error");
+
+  if (alamatTujuanInput.trim() === "") {
+    alamatTujuanError.innerHTML = templateError(
+      "Alamat Tujuan tidak boleh kosong"
+    );
+    isValid = false;
+  } else {
+    alamatTujuanError.innerHTML = "";
+  }
+
+  // Validate No Telepon
+  const noTelponInput = document.querySelector("#no-telpon-input").value;
+  const noTelponError = document.querySelector("#no-telpon-error");
+
+  if (noTelponInput.trim() === "") {
+    noTelponError.innerHTML = templateError("No Telepon tidak boleh kosong");
+    isValid = false;
+  } else {
+    noTelponError.innerHTML = "";
+  }
+
   if (isValid) {
-    console.log(isValid)
-    e.preventDefault();
     const sendData = await fetch(`${BASE_URL}/order`, {
       method: "POST",
       headers: {
@@ -68,6 +122,10 @@ const sendOrderData = async (e, { price, type }) => {
         berat_barang: +beratBarangInput,
         harga_pengiriman: price * +beratBarangInput,
         alamat: alamatInput,
+        nama_pengirim: namaPengirimInput,
+        nama_penerima: namaPenerimaInput,
+        alamat_asal: alamatTujuanInput,
+        no_telpon: noTelponInput,
       }),
     });
 
@@ -78,10 +136,12 @@ const sendOrderData = async (e, { price, type }) => {
       );
       document.querySelector("#berat-barang-input").value = null;
       document.querySelector("#alamat-input").value = null;
+      document.querySelector("#nama-pengirim-input").value = null;
+      document.querySelector("#nama-penerima-input").value = null;
+      document.querySelector("#alamat-tujuan-input").value = null;
+      document.querySelector("#no-telpon-input").value = null;
       closeModal();
     }
-  } else {
-    e.preventDefault()
   }
 };
 
@@ -92,6 +152,7 @@ btnOrders.forEach((btnOrder) => {
 });
 modalClose.addEventListener("click", () => closeModal());
 
-orderForm.addEventListener("submit", async (e) =>
-  sendOrderData(e, { price, type })
-);
+orderForm.addEventListener("submit", async (e) => {
+  e.preventDefault();
+  sendOrderData(e, { price, type });
+});
