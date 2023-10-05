@@ -27,30 +27,61 @@ const closeModal = () => {
   document.querySelector("body").classList.remove("overflow-hidden");
 };
 
+const templateError = (message) =>
+  `<span class="text-xs text-primary">${message}</span>`;
+
 const sendOrderData = async (e, { price, type }) => {
-  e.preventDefault();
+  let isValid = true;
+
   let beratBarangInput = document.querySelector("#berat-barang-input").value;
+  const beratBarangError = document.querySelector("#berat-barang-error");
+
+  if (isNaN(beratBarangInput) || parseInt(beratBarangInput) <= 0) {
+    beratBarangError.innerHTML = templateError(
+      "Berat barang harus berupa angka yang lebih dari 0"
+    );
+    isValid = false;
+  } else {
+    beratBarangError.innerHTML = "";
+  }
+
   let alamatInput = document.querySelector("#alamat-input").value;
+  const alamatError = document.querySelector("#alamat-error");
 
-  const sendData = await fetch(`${BASE_URL}/order`, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({
-      jenis_layanan: type,
-      berat_barang: +beratBarangInput,
-      harga_pengiriman: price * +beratBarangInput,
-      alamat: alamatInput,
-    }),
-  });
+  if (alamatInput.trim() === "") {
+    alamatError.innerHTML = templateError("Alamat tidak boleh kosong");
+    isValid = false;
+  } else {
+    alamatError.innerHTML = "";
+  }
 
-  const response = await sendData.json();
-  if (response.code == 201) {
-    alert(`${response.message} \n Nomor resi anda: ${response.data.nomor_resi}`);
-    document.querySelector("#berat-barang-input").value = null;
-    document.querySelector("#alamat-input").value = null;
-    closeModal();
+  if (isValid) {
+    console.log(isValid)
+    e.preventDefault();
+    const sendData = await fetch(`${BASE_URL}/order`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        jenis_layanan: type,
+        berat_barang: +beratBarangInput,
+        harga_pengiriman: price * +beratBarangInput,
+        alamat: alamatInput,
+      }),
+    });
+
+    const response = await sendData.json();
+    if (response.code == 201) {
+      alert(
+        `${response.message} \n Nomor resi anda: ${response.data.nomor_resi}`
+      );
+      document.querySelector("#berat-barang-input").value = null;
+      document.querySelector("#alamat-input").value = null;
+      closeModal();
+    }
+  } else {
+    e.preventDefault()
   }
 };
 
