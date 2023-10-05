@@ -1,5 +1,5 @@
 import "../css/style.css";
-import "./layanan";
+const BASE_URL = "https://be-semarang-20-production.up.railway.app/api";
 // import "./router"
 
 // Validation Form
@@ -17,7 +17,32 @@ const messageError = document.querySelector("#message-error");
 const templateError = (message) =>
   `<span class="text-xs text-primary">${message}</span>`;
 
+const sendContact = async ({ name, email, company_name, message }) => {
+  const sendData = await fetch(`${BASE_URL}/contact-us`, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      name,
+      email,
+      company_name,
+      message,
+    }),
+  });
+
+  const response = await sendData.json();
+  if (response.code == 201) {
+    alert("Pesan Anda sudah dikirim, akan kami tinjau setelah ini!");
+    fullNameInput.value = null;
+    emailInput.value = null;
+    companyInput.value = null;
+    messageInput.value = null;
+  }
+};
+
 contactForm.addEventListener("submit", (e) => {
+  e.preventDefault();
   let isValid = true;
 
   if (fullNameInput.value.trim() === "") {
@@ -49,7 +74,15 @@ contactForm.addEventListener("submit", (e) => {
     messageError.innerHTML = "";
   }
 
-  if (!isValid) {
-    e.preventDefault();
+  if (isValid) {
+    sendContact({
+      name: fullNameInput.value,
+      email: emailInput.value,
+      company_name: companyInput.value,
+      message: messageInput.value,
+    });
+    console.log("hoo");
+  } else {
+    console.log("hehe");
   }
 });

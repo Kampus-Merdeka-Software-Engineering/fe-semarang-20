@@ -1,3 +1,4 @@
+import "../css/style.css";
 const BASE_URL = "https://be-semarang-20-production.up.railway.app/api";
 
 // Modal
