@@ -10,7 +10,10 @@ export default defineConfig({
         "tentang-kami": fileURLToPath(
           new URL("tentang-kami.html", import.meta.url)
         ),
+        layanan: fileURLToPath(new URL("layanan.html", import.meta.url)),
       },
     },
+    cssMinify: true,
+    minify: true,
   },
 });

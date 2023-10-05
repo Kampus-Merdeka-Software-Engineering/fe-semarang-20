@@ -1,4 +1,5 @@
 import "../css/style.css";
+import "./layanan";
 // import "./router"
 
 // Validation Form
@@ -18,7 +19,6 @@ const templateError = (message) =>
 
 contactForm.addEventListener("submit", (e) => {
   let isValid = true;
-
 
   if (fullNameInput.value.trim() === "") {
     fullnameError.innerHTML = templateError("Full name is required");

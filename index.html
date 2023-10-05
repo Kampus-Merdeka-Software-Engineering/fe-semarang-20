@@ -13,15 +13,15 @@
           <h1 class="logo">REVOSHIP</h1>
           <div class="flex flex-row flex-wrap gap-3">
             <a href="#" class="active">Beranda</a>
-            <a href="#">Cek Harga</a>
-            <a href="#">Layanan</a>
+            <a href="#">Cek Resi</a>
+            <a href="layanan.html">Layanan</a>
             <a href="tentang-kami.html">Tentang Kami</a>
           </div>
-          <div class="flex flex-row flex-wrap gap-3">
+          <!-- <div class="flex flex-row flex-wrap gap-3">
             <button class="btn-primary" style="width: 100%; padding: 0 1rem">
               Mari bergabung
             </button>
-          </div>
+          </div> -->
         </nav>
       </header>
 
@@ -244,46 +244,65 @@
           <span class="text-primary">Kepercayaan</span> pelanggan kami
         </h2>
         <div class="grid grid-cols-3 gap-4 mt-4 testimoni">
-          <div class="testimoni-item">
-            <div class="flex flex-column gap-3">
-              <img src="public/images/quote-right.svg" class="w-1-12" />
-              <span class="text-white text-sm leading-normal">
-                Saya telah menjadi pelanggan setia Revoship selama beberapa
-                tahun terakhir, dan pengalaman saya dengan mereka selalu luar
-                biasa. Mereka tidak hanya mengantarkan barang saya dengan cepat
-                dan aman, tetapi juga memberikan pelayanan pelanggan yang sangat
-                ramah dan responsif.
-              </span>
+          <div class="testimoni-item gap-3">
+            <span class="text-white text-sm leading-normal mt-3">
+              Saya telah menjadi pelanggan setia Revoship selama beberapa tahun
+              terakhir, dan pengalaman saya dengan mereka selalu luar biasa.
+              Mereka tidak hanya mengantarkan barang saya dengan cepat dan aman,
+              tetapi juga memberikan pelayanan pelanggan yang sangat ramah dan
+              responsif.
+            </span>
+            <div class="flex flex-row items-center gap-2 w-full" style="border-top: 1px solid #cd3939">
+              <img
+                src="public/images/nazra.jpeg"
+                class="w-1-6 rounded-full mt-3"
+              />
+              <div class="flex flex-column">
+                <span class="text-white font-semibold text-md mt-3">Nazra Syifa</span>
+                <span class="text-white font-normal text-xs mt-1">TechGoods Co.</span>
+              </div>
             </div>
           </div>
 
-          <div class="testimoni-item">
-            <div class="flex flex-column gap-3">
-              <img src="public/images/quote-right.svg" class="w-1-12" />
-              <span class="text-white text-sm leading-normal">
-                Kami telah bekerja sama dengan Revoship selama bertahun-tahun,
-                dan mereka belum pernah mengecewakan kami. Layanan pengiriman
-                mereka sangat handal, dan pengiriman tepat waktu adalah sesuatu
-                yang kami hargai. Mereka juga sangat responsif terhadap
-                kebutuhan khusus kami, terutama ketika kami memiliki pengiriman
-                darurat. Revoship adalah mitra yang luar biasa untuk bisnis
-                kami, dan kami berencana untuk tetap bekerja sama dengan mereka
-                dalam waktu yang akan datang.
-              </span>
+          <div class="testimoni-item gap-3">
+            <span class="text-white text-sm leading-normal">
+              Kami telah bekerja sama dengan Revoship selama bertahun-tahun, dan
+              mereka belum pernah mengecewakan kami. Layanan pengiriman mereka
+              sangat handal, dan pengiriman tepat waktu adalah sesuatu yang kami
+              hargai. Mereka juga sangat responsif terhadap kebutuhan khusus
+              kami, terutama ketika kami memiliki pengiriman darurat. Revoship
+              adalah mitra yang luar biasa untuk bisnis kami, dan kami berencana
+              untuk tetap bekerja sama dengan mereka dalam waktu yang akan
+              datang.
+            </span>
+            <div class="flex flex-row items-center gap-2 w-full" style="border-top: 1px solid #cd3939">
+              <img
+                src="public/images/lidya.jpeg"
+                class="w-1-6 rounded-full mt-3"
+              />
+              <div class="flex flex-column">
+                <span class="text-white font-semibold text-md mt-3">Lidya Listiari</span>
+                <span class="text-white font-normal text-xs mt-1">Udayana co.</span>
+              </div>
             </div>
           </div>
 
-          <div class="testimoni-item">
-            <div class="flex flex-column gap-3">
-              <img src="public/images/quote-right.svg" class="w-1-12" />
-              <span class="text-white text-sm leading-normal">
-                Saya adalah seorang pedagang online yang mengelola toko fashion
-                online bernama TrendyCloth. Pengiriman adalah bagian integral
-                dari bisnis kami, dan kami sangat beruntung menemukan Revoship
-                sebagai mitra pengiriman kami.
-              </span>
-
-              <!-- Kurang profile -->
+          <div class="testimoni-item gap-3">
+            <span class="text-white text-sm leading-normal">
+              Saya adalah seorang pedagang online yang mengelola toko fashion
+              online bernama TrendyCloth. Pengiriman adalah bagian integral dari
+              bisnis kami, dan kami sangat beruntung menemukan Revoship sebagai
+              mitra pengiriman kami.
+            </span>
+            <div class="flex flex-row items-center gap-2 w-full" style="border-top: 1px solid #cd3939">
+              <img
+                src="public/images/irfan.jpg"
+                class="w-1-6 rounded-full mt-3"
+              />
+              <div class="flex flex-column">
+                <span class="text-white font-semibold text-md mt-3">Irfan</span>
+                <span class="text-white font-normal text-xs mt-1">RevoU</span>
+              </div>
             </div>
           </div>
         </div>
@@ -318,7 +337,6 @@
                   name="name"
                   id="fullname-input"
                   placeholder="Nama Anda"
-                  required
                 />
                 <div class="text-error" id="fullname-error"></div>
                 <input
@@ -327,7 +345,6 @@
                   name="email"
                   id="email-input"
                   placeholder="Masukan email"
-                  required
                 />
                 <div class="text-error" id="email-error"></div>
                 <input
@@ -336,7 +353,6 @@
                   name="company"
                   id="company-input"
                   placeholder="Nama perusahaan"
-                  required
                 />
                 <div class="text-error" id="company-error"></div>
                 <textarea
@@ -345,7 +361,6 @@
                   rows="4"
                   name="message"
                   id="message-input"
-                  required
                 ></textarea>
                 <div class="text-error" id="message-error"></div>
                 <button type="submit" id="btn-send">Kirim pertanyaan</button>
