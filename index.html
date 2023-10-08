@@ -9,16 +9,42 @@
   <body>
     <div class="container">
       <header>
-        <nav class="flex flex-row flex-wrap justify-between items-center">
+        <nav class="flex flex-row justify-between items-center">
           <a href="index.html">
             <h1 class="logo">REVOSHIP</h1>
           </a>
-          <div class="flex flex-row flex-wrap gap-3">
+          <div class="flex flex-row flex-wrap gap-3 navigation-list">
             <a href="#" class="active">Beranda</a>
             <a href="cek-resi.html">Cek Resi</a>
             <a href="layanan.html">Layanan</a>
             <a href="tentang-kami.html">Tentang Kami</a>
           </div>
+          <div class="hidden justify-end navigation-burger" role="button">
+            <svg
+              class="w-1-6 h-1-6"
+              fill="#bb2525"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </div>
+          <!-- <div class="flex flex-wrap justify-between items-end w-full mobile-menu">
+            <ul class="flex-col flex space-x-8 mt-4 font-medium">
+              <li>
+                <a
+                  href="index.html"
+                  class="text-black block pl-3 pr-4 py-2"
+                  aria-current="page"
+                  >Beranda</a
+                >
+              </li>
+            </ul>
+          </div> -->
           <!-- <div class="flex flex-row flex-wrap gap-3">
             <button class="btn-primary" style="width: 100%; padding: 0 1rem">
               Mari bergabung
@@ -31,17 +57,20 @@
       <section class="hero-section pb-4">
         <div class="flex flex-row gap-3 hero">
           <img
+            loading="lazy"
             src="./public/images/dots.svg"
             alt="dots-image"
             class="hero-section__dots"
           />
           <img
+            loading="lazy"
             src="./public/images/hero.webp"
             alt="hero-image"
             class="hero-section__hero-img"
           />
           <div class="p-1 flex flex-column">
             <img
+              loading="lazy"
               src="./public/images/pesawat.webp"
               alt="pesawat-image"
               class="hero-section__pesawat w-full"
@@ -75,12 +104,12 @@
 
             <!-- <div class="flex flex-row flex-wrap gap-4 mt-4 hero-section__hero-client-img">
               
-              <img class="hero-client-img" src="./public/images/image 2.png" />
-              <img class="hero-client-img" src="./public/images/image 3.png" />
-              <img class="hero-client-img" src="./public/images/image 4.png" />
-              <img class="hero-client-img" src="./public/images/image 5.png" />
-              <img class="hero-client-img" src="./public/images/image 6.png" />
-              <img class="hero-client-img" src="./public/images/image 7.png" />
+              <img loading="lazy" class="hero-client-img" src="./public/images/image 2.png" />
+              <img loading="lazy" class="hero-client-img" src="./public/images/image 3.png" />
+              <img loading="lazy" class="hero-client-img" src="./public/images/image 4.png" />
+              <img loading="lazy" class="hero-client-img" src="./public/images/image 5.png" />
+              <img loading="lazy" class="hero-client-img" src="./public/images/image 6.png" />
+              <img loading="lazy" class="hero-client-img" src="./public/images/image 7.png" />
 
             </div> -->
           </div>
@@ -129,7 +158,11 @@
           </div>
           <div class="flex flex-column">
             <div class="flex flex-row gap-3 mb-4 feature">
-              <img src="./public/images/Group 48.svg" class="w-1-6" />
+              <img
+                loading="lazy"
+                src="./public/images/Group 48.svg"
+                class="w-1-6"
+              />
               <div class="flex flex-column gap-2">
                 <span class="text-3xl font-bold text-primary"
                   >Pengiriman Domestik</span
@@ -145,7 +178,11 @@
             </div>
 
             <div class="flex flex-row gap-3 mb-4 feature">
-              <img src="./public/images/Group 49.svg" class="w-1-6" />
+              <img
+                loading="lazy"
+                src="./public/images/Group 49.svg"
+                class="w-1-6"
+              />
               <div class="flex flex-column gap-2">
                 <span class="text-3xl font-bold text-primary"
                   >Pengiriman Internasional</span
@@ -161,7 +198,11 @@
             </div>
 
             <div class="flex flex-row gap-3 mb-4 feature">
-              <img src="./public/images/Group 50.svg" class="w-1-6" />
+              <img
+                loading="lazy"
+                src="./public/images/Group 50.svg"
+                class="w-1-6"
+              />
               <div class="flex flex-column gap-2">
                 <span class="text-3xl font-bold text-primary"
                   >Pengiriman Kilat</span
@@ -189,6 +230,7 @@
         <div class="grid grid-cols-3 gap-4 mt-4 advantage">
           <div class="advantage-item">
             <img
+              loading="lazy"
               src="public/images/bench-accounting-MGaFENpDCsw-unsplash.webp"
               alt="item-1"
               class="mb-3"
@@ -205,6 +247,7 @@
 
           <div class="advantage-item">
             <img
+              loading="lazy"
               src="public/images/medium-shot-delivery-man-carrying-box.webp"
               alt="item-1"
               class="mb-3"
@@ -221,6 +264,7 @@
 
           <div class="advantage-item">
             <img
+              loading="lazy"
               src="public/images/young-man-delivering-package-customer-home-delivery.webp"
               alt="item-1"
               class="mb-3"
@@ -259,6 +303,7 @@
               style="border-top: 1px solid #cd3939"
             >
               <img
+                loading="lazy"
                 src="public/images/nazra.jpeg"
                 class="w-1-6 rounded-full mt-3"
               />
@@ -289,6 +334,7 @@
               style="border-top: 1px solid #cd3939"
             >
               <img
+                loading="lazy"
                 src="public/images/lidya.jpeg"
                 class="w-1-6 rounded-full mt-3"
               />
@@ -315,6 +361,7 @@
               style="border-top: 1px solid #cd3939"
             >
               <img
+                loading="lazy"
                 src="public/images/irfan.jpg"
                 class="w-1-6 rounded-full mt-3"
               />
@@ -338,6 +385,7 @@
               menanggapi pertanyaan kamu
             </p>
             <img
+              loading="lazy"
               src="public/images/young-man-delivering-package-customer-home-delivery.webp"
               alt="item-1"
               class="mb-3"

@@ -104,6 +104,38 @@ This is an utilites class
   flex-wrap: wrap;
 }
 
+.flex-shrink-0 {
+  flex-shrink: 0;
+}
+
+.flex-shrink-1 {
+  flex-shrink: 1;
+}
+
+.flex-shrink-2 {
+  flex-shrink: 2;
+}
+
+.space-x-0 > * + * {
+  margin-left: 0;
+}
+
+.space-x-1 > * + * {
+  margin-left: 0.25rem;
+}
+
+.space-x-2 > * + * {
+  margin-left: 0.5rem;
+}
+
+.space-x-3 > * + * {
+  margin-left: 1rem;
+}
+
+.space-x-4 > * + * {
+  margin-left: 2rem;
+}
+
 /* Justify Content Utilities */
 .justify-start {
   justify-content: flex-start;
@@ -261,6 +293,39 @@ This is an utilites class
 
 .min-h-screen {
   min-height: 100vh;
+}
+
+/* Min Width Utilities */
+.min-w-0 {
+  min-width: 0;
+}
+
+.min-w-1 {
+  min-width: 1rem;
+}
+
+.min-w-2 {
+  min-width: 2rem;
+}
+
+.min-w-4 {
+  min-width: 4rem;
+}
+
+.min-w-8 {
+  min-width: 8rem;
+}
+
+.min-w-screen-sm {
+  min-width: 640px; /* Adjust as needed */
+}
+
+.min-w-screen-md {
+  min-width: 768px; /* Adjust as needed */
+}
+
+.min-w-screen-lg {
+  min-width: 1024px; /* Adjust as needed */
 }
 
 /* 2. Grid */
@@ -542,6 +607,27 @@ This is an utilites class
   padding: 2rem;
 }
 
+/* Padding Y Utilities */
+.py-0 {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.py-3 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
 .py-4 {
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -804,6 +890,18 @@ This is an utilites class
   overflow-y: auto;
 }
 
+.overflow-y-scroll {
+  overflow-y: scroll;
+}
+
+.overflow-x-auto {
+  overflow-x: auto;
+}
+
+.overflow-x-scroll {
+  overflow-x: scroll;
+}
+
 /* Display Utilities */
 .block {
   display: block;
@@ -879,7 +977,7 @@ This is an utilites class
   display: none;
 }
 
-.visible {
+.block {
   display: block;
 }
 
@@ -905,6 +1003,15 @@ This is an utilites class
 
 .leading-loose {
   line-height: 2;
+}
+
+/* Visibility Utilities */
+.visible {
+  visibility: visible;
+}
+
+.invisible {
+  visibility: hidden;
 }
 
 /* Width Utilities */

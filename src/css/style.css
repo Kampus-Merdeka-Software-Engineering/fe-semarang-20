@@ -832,4 +832,13 @@ section.mission img.mission-dots {
   .modal {
     width: 80%;
   }
+
+  .navigation-list {
+    display: none;
+  }
+
+  .navigation-burger {
+    display: flex;
+    cursor: pointer;
+  }
 }
