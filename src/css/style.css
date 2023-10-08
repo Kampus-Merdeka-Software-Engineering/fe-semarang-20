@@ -209,6 +209,30 @@ h2.about-section__tagline {
   position: relative;
 }
 
+.check-resi-input {
+  height: 2.5rem;
+  flex-shrink: 0;
+  border: 1px solid #bb2525;
+  border-radius: 6px;
+  padding-left: 0.3rem;
+}
+
+.check-resi-btn {
+  background: #bb2525;
+  border-radius: 6px;
+  color: #fff;
+  border: 1px solid #bb2525;
+  cursor: pointer;
+  padding: 0.8rem;
+
+  transition: all 0.3s ease;
+}
+
+.check-resi-btn:hover {
+  background: #aa3333;
+  border: 1px solid #aa3333;
+}
+
 h2.about-section__tagline::after {
   content: ""; /* Add content to the pseudo-element */
   display: block; /* Make it a block-level element */
@@ -499,6 +523,21 @@ section.mission img.mission-dots {
   animation-name: fadeOut;
 }
 
+.order-title {
+  position: relative;
+}
+
+.order-title::after {
+  content: ""; /* Add content to the pseudo-element */
+  display: block; /* Make it a block-level element */
+  width: 30%; /* Set the desired width (half in this case) */
+  height: 2px; /* Set the height/thickness of the line */
+  background-color: #bb2525; /* Set the color of the line */
+  position: absolute; /* Position it absolutely within the anchor */
+  bottom: -8px; /* Adjust the position to place it closer to the text */
+  left: 0; /* Center the line under the text (adjust this value as needed) */
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -628,7 +667,7 @@ section.mission img.mission-dots {
     text-align: center;
   }
 
-  .service-section h1{
+  .service-section h1 {
     margin-top: 1rem;
   }
 
@@ -641,7 +680,7 @@ section.mission img.mission-dots {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 
-  .modal{
+  .modal {
     width: 80%;
   }
 }
@@ -777,7 +816,7 @@ section.mission img.mission-dots {
     text-align: center;
   }
 
-  .service-section h1{
+  .service-section h1 {
     margin-top: 1rem;
   }
 
@@ -790,7 +829,7 @@ section.mission img.mission-dots {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 
-  .modal{
+  .modal {
     width: 80%;
   }
 }

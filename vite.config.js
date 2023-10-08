@@ -11,6 +11,7 @@ export default defineConfig({
           new URL("tentang-kami.html", import.meta.url)
         ),
         layanan: fileURLToPath(new URL("layanan.html", import.meta.url)),
+        "cek-resi": fileURLToPath(new URL("cek-resi.html", import.meta.url)),
       },
     },
     cssMinify: true,

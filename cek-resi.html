@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cek Resi</title>
+  </head>
+  <body>
+    <header class="container">
+      <nav class="flex flex-row flex-wrap justify-between items-center">
+        <a href="index.html">
+          <h1 class="logo">REVOSHIP</h1>
+        </a>
+        <div class="flex flex-row flex-wrap gap-3">
+          <a href="index.html">Beranda</a>
+          <a href="#" class="active">Cek Resi</a>
+          <a href="layanan.html">Layanan</a>
+          <a href="tentang-kami.html">Tentang Kami</a>
+        </div>
+        <!-- <div class="flex flex-row flex-wrap gap-3">
+                <button class="btn-primary" style="width: 100%; padding: 0 1rem">
+                  Mari bergabung
+                </button>
+              </div> -->
+      </nav>
+    </header>
+
+    <section class="container check-section pb-4">
+      <div class="flex flex-column justify-center w-full">
+        <h1
+          class="text-4xl font-extrabold w-3-4 text-center text-primary mx-auto"
+        >
+          Cek Status Pengiriman Anda
+        </h1>
+        <span
+          class="text-base leading-normal text-center text-black w-3-4 mx-auto mt-3 font-medium tagline"
+          >Pantau perjalanan barang Anda dengan memasukkan nomor resi di bawah
+          ini.</span
+        >
+
+        <form
+          action="#"
+          class="flex flex-row gap-2 flex-wrap  justify-center mt-4"
+          id="form-cek-resi"
+        >
+          <div class="flex flex-column w-1-2">
+            <input
+              class="check-resi-input"
+              type="text"
+              name="cek-resi"
+              id="cek-resi"
+              placeholder="Masukan Resi Anda disini"
+            />
+            <div class="text-error" id="cek-resi-error"></div>
+          </div>
+          <button class="check-resi-btn w-1-6 h-1-2" id="check-btn">
+            Cek Disini
+          </button>
+        </form>
+      </div>
+
+      <div
+        class="flex flex-column w-3-4 mx-auto mt-4 shadow-lg p-4 hidden"
+        id="receipt-box"
+      >
+        <div class="flex flex-row justify-between">
+          <span class="text-primary font-semibold text-2xl order-title"
+            >Order detail</span
+          >
+          <span class="font-semibold text-black"
+            >No Resi: <span class="text-primary" id="no-resi"></span
+          ></span>
+        </div>
+
+        <div class="flex flex-row justify-between mt-4">
+          <div class="flex flex-column gap-1">
+            <div class="flex flex-column gap-1 mb-3">
+              <span class="text-primary font-xl font-bold">Nama Pengirim:</span>
+              <span class="text-black font-semibold" id="nama-pengirim"></span>
+            </div>
+            <div class="flex flex-column gap-1 mb-3">
+              <span class="text-primary font-xl font-bold">Nama Penerima:</span>
+              <span class="text-black font-semibold" id="nama-penerima"></span>
+            </div>
+            <div class="flex flex-column gap-1 mb-3">
+              <span class="text-primary font-xl font-bold"
+                >Status Pengiriman:</span
+              >
+              <span
+                class="text-black font-semibold"
+                id="status-pengiriman"
+              ></span>
+            </div>
+          </div>
+
+          <div class="flex flex-column gap-1">
+            <div class="flex flex-column gap-1 mb-3">
+              <span class="text-primary font-xl font-bold">Jenis Layanan:</span>
+              <span
+                class="text-primary font-semibold"
+                id="jenis-layanan"
+              ></span>
+            </div>
+            <div class="flex flex-column gap-1 mb-3">
+              <span class="text-primary font-xl font-bold"
+                >Tanggal Pengiriman:</span
+              >
+              <span
+                class="text-black font-semibold"
+                id="tanggal-pengiriman"
+              ></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script type="module" src="./src/js/cek-resi.js"></script>
+  </body>
+</html>
