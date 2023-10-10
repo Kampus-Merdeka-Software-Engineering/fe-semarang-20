@@ -9,11 +9,11 @@
   <body>
     <div class="container">
       <header>
-        <nav class="flex flex-row justify-between items-center">
+        <!-- <nav class="flex flex-row justify-between items-center">
           <a href="index.html">
             <h1 class="logo">REVOSHIP</h1>
           </a>
-          <div class="flex flex-row flex-wrap gap-3 navigation-list">
+          <div class="flex flex-row flex-wrap gap-3">
             <a href="#" class="active">Beranda</a>
             <a href="cek-resi.html">Cek Resi</a>
             <a href="layanan.html">Layanan</a>
@@ -33,7 +33,7 @@
               ></path>
             </svg>
           </div>
-          <!-- <div class="flex flex-wrap justify-between items-end w-full mobile-menu">
+          <div class="flex flex-wrap justify-between items-end w-full mobile-menu">
             <ul class="flex-col flex space-x-8 mt-4 font-medium">
               <li>
                 <a
@@ -44,12 +44,18 @@
                 >
               </li>
             </ul>
-          </div> -->
-          <!-- <div class="flex flex-row flex-wrap gap-3">
-            <button class="btn-primary" style="width: 100%; padding: 0 1rem">
-              Mari bergabung
-            </button>
-          </div> -->
+          </div>
+        </nav> -->
+        <nav class="flex flex-row flex-wrap justify-between items-center">
+          <a href="index.html">
+            <h1 class="logo">REVOSHIP</h1>
+          </a>
+          <div class="flex flex-row flex-wrap gap-3">
+            <a href="#" class="active">Beranda</a>
+            <a href="cek-resi.html" >Cek Resi</a>
+            <a href="layanan.html">Layanan</a>
+            <a href="tentang-kami.html">Tentang Kami</a>
+          </div>
         </nav>
       </header>
 
@@ -88,30 +94,19 @@
 
             <label class="flex flex-column gap-2 flex-wrap" for="cek-resi">
               <span class="text-primary">Cek Resi</span>
-              <div class="flex flex-row gap-2 flex-wrap items-center">
+              <form class="flex flex-row gap-2 flex-wrap items-center" action="cek-resi.html" method="get">
                 <input
-                  class="hero-section__hero-input w-3-4"
+                  class="hero-section__hero-input"
                   type="text"
-                  name="cek-resi"
+                  name="no-resi"
                   id="cek-resi"
                   placeholder="Masukan Resi Anda disini"
                 />
-                <button class="hero-section__btn-check w-1-6 h-full">
+                <button class="hero-section__btn-check">
                   Cek Disini
                 </button>
-              </div>
+              </form>
             </label>
-
-            <!-- <div class="flex flex-row flex-wrap gap-4 mt-4 hero-section__hero-client-img">
-              
-              <img loading="lazy" class="hero-client-img" src="./public/images/image 2.png" />
-              <img loading="lazy" class="hero-client-img" src="./public/images/image 3.png" />
-              <img loading="lazy" class="hero-client-img" src="./public/images/image 4.png" />
-              <img loading="lazy" class="hero-client-img" src="./public/images/image 5.png" />
-              <img loading="lazy" class="hero-client-img" src="./public/images/image 6.png" />
-              <img loading="lazy" class="hero-client-img" src="./public/images/image 7.png" />
-
-            </div> -->
           </div>
         </div>
       </section>
@@ -450,15 +445,19 @@
         <div class="mt-4 mb-4 flex flex-row flex-wrap justify-between gap-4">
           <div class="flex flex-column justify-center gap-3">
             <span class="text-white font-semibold">Bantuan & Panduan</span>
-            <a href="tentang-kami" class="text-white text-base underline-none"
+            <a href="index.html" class="text-white text-base underline-none"
+              >Beranda</a
+            >
+            <a href="cek-resi.html" class="text-white text-base underline-none"
+              >Cek Resi</a
+            >
+            <a href="layanan.html" class="text-white text-base underline-none"
+              >Layanan</a
+            >
+            <a
+              href="tentang-kami.html"
+              class="text-white text-base underline-none"
               >Tentang Kami</a
-            >
-            <a href="#" class="text-white text-base underline-none">Lokasi</a>
-            <a href="#" class="text-white text-base underline-none"
-              >Cek Kurir</a
-            >
-            <a href="#" class="text-white text-base underline-none"
-              >Testimoni</a
             >
           </div>
           <div class="flex flex-column gap-3">
