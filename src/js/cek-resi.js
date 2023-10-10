@@ -45,14 +45,15 @@ const showResult = (data) => {
   );
 };
 
-if (getNoResi) {
+(async () => {
   const data = await fetchData(getNoResi);
-  if(data.code != 200) {
-    alert("Paket data tidak ditemukan!")
+  if (data.code != 200) {
+    alert("Paket data tidak ditemukan!");
   } else {
     showResult(data.data);
   }
-}
+  cekResiInput.value = getNoResi;
+})();
 
 formCheckResi.addEventListener("submit", async (event) => {
   event.preventDefault();
@@ -65,9 +66,9 @@ formCheckResi.addEventListener("submit", async (event) => {
   }
 
   const data = await fetchData(cekResiInput.value);
-  if(data.code != 200) {
-    alert("Paket data tidak ditemukan!")
-    return
+  if (data.code != 200) {
+    alert("Paket data tidak ditemukan!");
+    return;
   }
   showResult(data.data);
 });
